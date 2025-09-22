@@ -112,7 +112,7 @@ const config = {
 							},
 							{
 								label: 'Data Structures',
-								to: '/docs/category/contributing'
+								to: '/docs/category/data-structures'
 							}
 						]
 					},
