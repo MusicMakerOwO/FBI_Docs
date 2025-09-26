@@ -7,6 +7,11 @@ A Bound Snapshot Chain (BSC) is a sequence of states that represent the evolutio
 Each state in the chain is linked to its predecessor, forming a chain that can be traced and rebuilt at any point in time.
 This structure is the backbone of FBI's server snapshots and this document just explains it in depth.
 
+:::tip TL;DR
+A Bound Snapshot Chain (BSC) is a linked list of snapshots, inspired by Git commits. BSC only stores differences of the system state to save on storage costs.
+:::
+
+
 ## Table of Contents
 - [The Problem](#the-problem)
 - [Requirements & Constraints](#requirements--constraints)

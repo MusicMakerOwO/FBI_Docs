@@ -7,6 +7,10 @@ The cache pool is FBI's internal solution to one of the most subtle but frustrat
 
 Unlike a traditional queue or FIFO buffer where messages are added and processed from a single shared array, the cache pool is built around the idea of rotating caches - essentially a "group of groups" - so that adding new data during processing never interferes with the data currently being processed.
 
+:::tip TL;DR
+The Cache Pool uses multiple rotating caches to isolate reads from writes, preventing race conditions and silent data loss even under high load.
+:::
+
 ## Table of Contents
 - [The Problem](#the-problem)
 - [Real-World Example](#real-world-example)
